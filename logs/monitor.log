@@ -1,0 +1,34 @@
+===== 2026-11-12 17:14:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381         422        2562           5         550        2958
+Swap:           1907           0        1907
+--- CPU ---
+top - 17:14:02 up  1:18,  2 users,  load average: 0.02, 0.08, 0.08
+Tasks: 117 total,   1 running, 116 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  4.2 sy,  0.0 ni, 91.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        3448  0.0  1.4 369648 51344 ?        Ssl  17:10   0:00 /usr/libexec/fwupd/fwupd
+root        3517  0.0  0.8 346372 28128 ?        Ssl  17:10   0:00 /usr/libexec/packagekitd
+root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 17:25:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381         395        2587           5         552        2985
+Swap:           1907           0        1907
+--- CPU ---
+top - 17:25:01 up  1:29,  2 users,  load average: 0.28, 0.17, 0.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  4.8 sy,  0.0 ni, 95.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.6  49928 22496 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1021  0.0  0.6 129668 21768 ?        Ssl  15:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
