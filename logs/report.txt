@@ -1,0 +1,63 @@
+DIAGNOSTIC REPORT — 2026-11-12 18:34:28
+Period: since 2026-11-12 17:50:01
+
+=== 1. MEMORY (MB) ===
+17:50:01 used: 588 available: 2792
+17:55:01 used: 1189 available: 2191
+18:00:01 used: 1790 available: 1590
+18:05:01 used: 2393 available: 987
+18:10:01 used: 2964 available: 416
+18:15:01 used: 3297 available: 83
+18:20:01 used: 3293 available: 87
+18:25:01 used: 3293 available: 87
+18:30:01 used: 361 available: 3019
+Peak used: 3297 MB
+CRITICAL 18:15:01 - available only 83 MB
+CRITICAL 18:20:01 - available only 87 MB
+CRITICAL 18:25:01 - available only 87 MB
+
+=== 2. CPU ===
+top - 17:50:01 up  1:54,  2 users,  load average: 0.18, 0.13, 0.10
+%Cpu(s):  4.5 us,  4.5 sy,  0.0 ni, 90.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 17:55:02 up  1:59,  2 users,  load average: 0.21, 0.15, 0.10
+%Cpu(s):  4.2 us,  8.3 sy,  0.0 ni, 87.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 18:00:01 up  2:04,  2 users,  load average: 0.07, 0.12, 0.09
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 18:05:01 up  2:09,  2 users,  load average: 0.20, 0.13, 0.10
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 18:10:02 up  2:14,  2 users,  load average: 0.11, 0.10, 0.09
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 90.9 id,  4.5 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 18:15:01 up  2:19,  2 users,  load average: 0.58, 0.28, 0.16
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 18:20:01 up  2:24,  2 users,  load average: 0.34, 0.36, 0.23
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 18:25:02 up  2:29,  2 users,  load average: 0.46, 0.41, 0.28
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 18:30:01 up  2:34,  2 users,  load average: 0.25, 0.39, 0.33
+%Cpu(s):  0.0 us,  4.8 sy,  0.0 ni, 95.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+
+=== 3. SWAP (MB) ===
+17:50:01 used: 0 of 1907
+17:55:01 used: 0 of 1907
+18:00:01 used: 0 of 1907
+18:05:01 used: 0 of 1907
+18:10:01 used: 0 of 1907
+18:15:01 used: 233 of 1907
+18:20:01 used: 840 of 1907
+18:25:01 used: 1437 of 1907
+18:30:01 used: 7 of 1907
+Peak swap used: 1437 MB
+
+=== 4. CRITICAL EVENTS (err and above) ===
+Nov 12 18:15:10 katef20 chronyd[1045]: NTS-KE session with 91.189.91.113:4460 (4.ntp.ubuntu.com) timed out
+Nov 12 18:15:10 katef20 chronyd[1045]: NTS-KE session with 91.189.91.111:4460 (ntp-bootstrap.ubuntu.com) timed out
+Nov 12 18:15:11 katef20 chronyd[1045]: NTS-KE session with 185.125.190.123:4460 (2.ntp.ubuntu.com) timed out
+Nov 12 18:15:11 katef20 chronyd[1045]: NTS-KE session with 185.125.190.122:4460 (1.ntp.ubuntu.com) timed out
+Nov 12 18:15:12 katef20 chronyd[1045]: NTS-KE session with 185.125.190.121:4460 (ntp-bootstrap.ubuntu.com) timed out
+Nov 12 18:15:12 katef20 chronyd[1045]: NTS-KE session with 91.189.91.112:4460 (3.ntp.ubuntu.com) timed out
+Nov 12 18:29:25 katef20 kernel: Out of memory: Killed process 4165 (python3) total-vm:5057180kB, anon-rss:3080204kB, file-rss:1456kB, shmem-rss:0kB, UID:1000 pgtables:9900kB oom_score_adj:0
+
+=== 5. KERNEL: OOM-KILLER ===
+OOM kills: 1
+Nov 12 18:29:25 katef20 kernel: python3 invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=0
+Nov 12 18:29:25 katef20 kernel: Out of memory: Killed process 4165 (python3) total-vm:5057180kB, anon-rss:3080204kB, file-rss:1456kB, shmem-rss:0kB, UID:1000 pgtables:9900kB oom_score_adj:0

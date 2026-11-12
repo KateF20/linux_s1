@@ -1,34 +1,195 @@
-===== 2026-11-12 17:14:01 =====
+===== 2026-11-12 17:50:01 =====
 --- Память и swap ---
                total        used        free      shared  buff/cache   available
-Mem:            3381         422        2562           5         550        2958
+Mem:            3381         588        2392           5         554        2792
 Swap:           1907           0        1907
 --- CPU ---
-top - 17:14:02 up  1:18,  2 users,  load average: 0.02, 0.08, 0.08
-Tasks: 117 total,   1 running, 116 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  4.2 us,  4.2 sy,  0.0 ni, 91.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+top - 17:50:01 up  1:54,  2 users,  load average: 0.18, 0.13, 0.10
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.5 us,  4.5 sy,  0.0 ni, 90.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
 --- Top 3 processes sorted by memory ---
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root        3448  0.0  1.4 369648 51344 ?        Ssl  17:10   0:00 /usr/libexec/fwupd/fwupd
-root        3517  0.0  0.8 346372 28128 ?        Ssl  17:10   0:00 /usr/libexec/packagekitd
+katef20     4165  0.1  6.1 222956 214648 tty1    S    17:48   0:00 python3 scripts/leak.py 20 10
 root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.6  49928 22496 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 --- Critical errors last 5 min ---
 --- Core: OOM-killer last 5 min ---
 
-===== 2026-11-12 17:25:01 =====
+===== 2026-11-12 17:55:01 =====
 --- Память и swap ---
                total        used        free      shared  buff/cache   available
-Mem:            3381         395        2587           5         552        2985
+Mem:            3381        1189        1791           5         554        2191
 Swap:           1907           0        1907
 --- CPU ---
-top - 17:25:01 up  1:29,  2 users,  load average: 0.28, 0.17, 0.11
+top - 17:55:02 up  1:59,  2 users,  load average: 0.21, 0.15, 0.10
+Tasks: 117 total,   1 running, 116 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  8.3 sy,  0.0 ni, 87.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+katef20     4165  0.1 23.9 837476 829168 tty1    S    17:48   0:00 python3 scripts/leak.py 20 10
+root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.6  49928 22496 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:00:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381        1790        1189           5         555        1590
+Swap:           1907           0        1907
+--- CPU ---
+top - 18:00:01 up  2:04,  2 users,  load average: 0.07, 0.12, 0.09
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+katef20     4165  0.1 41.6 1451996 1443688 tty1  S    17:48   0:00 python3 scripts/leak.py 20 10
+root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.6  49928 22496 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:05:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381        2393         586           5         555         987
+Swap:           1907           0        1907
+--- CPU ---
+top - 18:05:01 up  2:09,  2 users,  load average: 0.20, 0.13, 0.10
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+katef20     4165  0.1 59.4 2066516 2058208 tty1  S    17:48   0:01 python3 scripts/leak.py 20 10
+root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.6  49928 22496 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:10:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381        2964          96           5         474         416
+Swap:           1907           0        1907
+--- CPU ---
+top - 18:10:02 up  2:14,  2 users,  load average: 0.11, 0.10, 0.09
+Tasks: 115 total,   1 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 90.9 id,  4.5 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+katef20     4165  0.1 77.1 2681036 2672728 tty1  S    17:48   0:01 python3 scripts/leak.py 20 10
+root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.6  49928 22496 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:15:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381        3297         112           5          94          83
+Swap:           1907         233        1673
+--- CPU ---
+top - 18:15:01 up  2:19,  2 users,  load average: 0.58, 0.28, 0.16
+Tasks: 117 total,   1 running, 116 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+katef20     4165  0.1 87.5 3275072 3031288 tty1  S    17:48   0:02 python3 scripts/leak.py 20 10
+root         961  0.0  0.5 549340 20660 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.5  49928 20472 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:20:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381        3293         115           5          93          87
+Swap:           1907         840        1066
+--- CPU ---
+top - 18:20:01 up  2:24,  2 users,  load average: 0.34, 0.36, 0.23
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+katef20     4165  0.2 87.2 3889592 3020252 tty1  S    17:48   0:03 python3 scripts/leak.py 20 10
+root         961  0.0  0.6 549340 21296 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root         953  0.0  0.5  49928 20472 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+Nov 12 18:15:10 katef20 chronyd[1045]: NTS-KE session with 91.189.91.113:4460 (4.ntp.ubuntu.com) timed out
+Nov 12 18:15:10 katef20 chronyd[1045]: NTS-KE session with 91.189.91.111:4460 (ntp-bootstrap.ubuntu.com) timed out
+Nov 12 18:15:11 katef20 chronyd[1045]: NTS-KE session with 185.125.190.123:4460 (2.ntp.ubuntu.com) timed out
+Nov 12 18:15:11 katef20 chronyd[1045]: NTS-KE session with 185.125.190.122:4460 (1.ntp.ubuntu.com) timed out
+Nov 12 18:15:12 katef20 chronyd[1045]: NTS-KE session with 185.125.190.121:4460 (ntp-bootstrap.ubuntu.com) timed out
+Nov 12 18:15:12 katef20 chronyd[1045]: NTS-KE session with 91.189.91.112:4460 (3.ntp.ubuntu.com) timed out
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:25:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381        3293         117           5          90          87
+Swap:           1907        1437         470
+--- CPU ---
+top - 18:25:02 up  2:29,  2 users,  load average: 0.46, 0.41, 0.28
+Tasks: 117 total,   1 running, 116 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+katef20     4165  0.2 87.4 4504112 3027428 tty1  S    17:48   0:04 python3 scripts/leak.py 20 10
+root         953  0.0  0.5  49928 20224 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         961  0.0  0.5 549340 18964 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:30:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381         361        3050           5          87        3019
+Swap:           1907           7        1899
+--- CPU ---
+top - 18:30:01 up  2:34,  2 users,  load average: 0.25, 0.39, 0.33
+Tasks: 119 total,   1 running, 118 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  4.8 sy,  0.0 ni, 95.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         961  0.0  0.5 549340 19056 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root        1021  0.0  0.5 129668 18364 ?        Ssl  15:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         953  0.0  0.5  49928 18164 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+Nov 12 18:29:25 katef20 kernel: Out of memory: Killed process 4165 (python3) total-vm:5057180kB, anon-rss:3080204kB, file-rss:1456kB, shmem-rss:0kB, UID:1000 pgtables:9900kB oom_score_adj:0
+--- Core: OOM-killer last 5 min ---
+Nov 12 18:29:25 katef20 kernel: Out of memory: Killed process 4165 (python3) total-vm:5057180kB, anon-rss:3080204kB, file-rss:1456kB, shmem-rss:0kB, UID:1000 pgtables:9900kB oom_score_adj:0
+
+===== 2026-11-12 18:35:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381         371        3024           5         120        3009
+Swap:           1907           7        1899
+--- CPU ---
+top - 18:35:01 up  2:39,  2 users,  load average: 0.07, 0.20, 0.25
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  4.5 sy,  0.0 ni, 95.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+--- Top 3 processes sorted by memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         961  0.0  0.5 549340 19056 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root        1021  0.0  0.5 129668 18364 ?        Ssl  15:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         953  0.0  0.5  49928 18164 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+--- Critical errors last 5 min ---
+--- Core: OOM-killer last 5 min ---
+
+===== 2026-11-12 18:40:01 =====
+--- Память и swap ---
+               total        used        free      shared  buff/cache   available
+Mem:            3381         413        2942           5         198        2967
+Swap:           1907           7        1899
+--- CPU ---
+top - 18:40:01 up  2:44,  2 users,  load average: 0.13, 0.15, 0.21
 Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.0 us,  4.8 sy,  0.0 ni, 95.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
 --- Top 3 processes sorted by memory ---
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         961  0.0  0.7 549340 25060 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
-root         953  0.0  0.6  49928 22496 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root        1021  0.0  0.6 129668 21768 ?        Ssl  15:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         961  0.0  0.5 549340 20080 ?        Ssl  15:56   0:00 /usr/libexec/udisks2/udisksd
+root        1021  0.0  0.5 129668 18364 ?        Ssl  15:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         953  0.0  0.5  49928 18164 ?        Ss   15:56   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 --- Critical errors last 5 min ---
 --- Core: OOM-killer last 5 min ---
 
